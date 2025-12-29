@@ -21,8 +21,15 @@ The workflow is intended for **base editing experiments**
 ## Inputs
 - batch-file: .csv/.tsv batch file containing the following variables 
   - required: amplicon, input_seq
-  - optional: window (e.g. "2-10", "2:10", "2..10", "2,10") OR window_start + window_end, RC (truthy/falsey values)
+  - optional: window (e.g. "2-10", "2:10", "2..10", "2,10") OR window_start + window_end. 
+  - optional: RC (true/false indicating the protospacer's sense relative to the sequencing amplicon)
 - base-crispresso-dir: directory containing CRISPResso_batch_on_<amplicon> folders
+
+## Outputs
+- Per-amplicon CSV in each CRISPResso_batch_on_<amplicon> directory:
+* ABE_reads__<amplicon>__<input_seq_sanitized>.csv
+- Compiled CSV in --base-crispresso-dir:
+* ABE_reads__combined.csv
 
 ## Requirements
 
