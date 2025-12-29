@@ -19,10 +19,10 @@ The workflow is intended for **base editing experiments**
 ---
 
 ## Inputs
---batch-file: .csv/.tsv batch file containing the following variales 
-    required: amplicon, input_seq
-    optional: window (e.g. "2-10", "2:10", "2..10", "2,10") OR window_start + window_end, RC (truthy/falsey values)
---base-crispresso-dir: directory containing CRISPResso_batch_on_<amplicon> folders
+- batch-file: .csv/.tsv batch file containing the following variables 
+  - required: amplicon, input_seq
+  - optional: window (e.g. "2-10", "2:10", "2..10", "2,10") OR window_start + window_end, RC (truthy/falsey values)
+- base-crispresso-dir: directory containing CRISPResso_batch_on_<amplicon> folders
 
 ## Requirements
 
