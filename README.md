@@ -2,7 +2,7 @@
 
 This repository provides a Python script for quantifying **total adenine base edited (ABE) reads** from CRISPResso2 allele frequency tables for a given point mutation type within a given editing window. The script is designed for batch analysis of multiple amplicons and samples and supports both forward- and reverse-complemented protospacers with correct editing-window handling.
 
-The workflow is intended for **base editing experiments** 
+The workflow is intended for **base editing experiments** pre-processed by CRISPResso2 (https://github.com/pinellolab/CRISPResso2).
 
 ---
 
