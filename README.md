@@ -20,8 +20,8 @@ The workflow is intended for **base editing experiments**
 
 ## Inputs
 - batch-file: .csv/.tsv batch file containing the following variables 
-  - required: ***amplicon***: Name of the sequencing amplicon (e.g. ***"FANCA"***)
-  - required: ***input_seq***: Protospacer sequence 5'-3' exluding PAM (e.g. GATTATATGTGCTAATGCTC)
+  - required: ****amplicon****: Name of the sequencing amplicon (e.g. ***"FANCA"***)
+  - required: ***input_seq***: Protospacer sequence 5'-3' exluding PAM (e.g. "GATTATATGTGCTAATGCTC")
   - optional: ***window*** (syntax "2-10", "2:10", "2..10", or "2,10") OR window_start + window_end. 
   - optional: ***RC*** (true/false indicating the protospacer's sense relative to the sequencing amplicon)
   - optional: ***print-variants***
