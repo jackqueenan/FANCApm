@@ -19,13 +19,13 @@ The workflow is intended for **base editing experiments**
 ---
 
 ## Inputs
-- batch-file: .csv/.tsv batch file containing the following variables 
-  - required: ****amplicon****: Name of the sequencing amplicon (e.g. ***"FANCA"***)
+- ***batch-file***: .csv/.tsv batch file containing the following variables 
+  - required: ***amplicon***: Name of the sequencing amplicon (e.g. ***"FANCA"***)
   - required: ***input_seq***: Protospacer sequence 5'-3' exluding PAM (e.g. "GATTATATGTGCTAATGCTC")
-  - optional: ***window*** (syntax "2-10", "2:10", "2..10", or "2,10") OR window_start + window_end. 
-  - optional: ***RC*** (true/false indicating the protospacer's sense relative to the sequencing amplicon)
-  - optional: ***print-variants***
-- base-crispresso-dir: directory containing CRISPResso_batch_on_<amplicon> folders
+  - optional: ***window*** Tuple representing the base editing window over which to calculate base edited reads (syntax is "2-10", "2:10", "2..10", or "2,10"). Alternatively, use window_start + window_end integer variables
+  - optional: ***RC***: Boolean variable indicating the protospacer's sense relative to the sequencing amplicon (TRUE indicates the ***input_seq*** is reverse complement of the HTS amplicon read1
+  - optional: ***print-variants***: print all base editing variants over which to sum read counts? 
+- ***base-crispresso-dir***: directory containing CRISPResso_batch_on_<amplicon> folders
 
 ## Outputs
 - Per-amplicon CSV in each CRISPResso_batch_on_<amplicon> directory: "ABE_reads__<amplicon>__<input_seq_sanitized>.csv"
