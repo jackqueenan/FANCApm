@@ -27,9 +27,9 @@ The workflow is intended for **base editing experiments**
 
 ## Outputs
 - Per-amplicon CSV in each CRISPResso_batch_on_<amplicon> directory:
-* ABE_reads__<amplicon>__<input_seq_sanitized>.csv
+ * ABE_reads__<amplicon>__<input_seq_sanitized>.csv
 - Compiled CSV in --base-crispresso-dir:
-* ABE_reads__combined.csv
+ * ABE_reads__combined.csv
 
 ## Requirements
 
