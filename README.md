@@ -1,8 +1,8 @@
 # ABE VLP Off-Target Quantification
 
-This repository provides a Python script for quantifying **adenine base editor (ABE) off-target editing** from CRISPResso2 allele frequency tables for a given point mutation type within a given editing window. The script is designed for batch analysis of multiple amplicons and samples and supports both forward- and reverse-complemented protospacers with correct editing-window handling.
+This repository provides a Python script for quantifying **total adenine base edited (ABE) reads** from CRISPResso2 allele frequency tables for a given point mutation type within a given editing window. The script is designed for batch analysis of multiple amplicons and samples and supports both forward- and reverse-complemented protospacers with correct editing-window handling.
 
-The workflow is optimized for **Vbase editing experiments**.
+The workflow is intended for **base editing experiments** 
 
 ---
 
@@ -17,6 +17,12 @@ The workflow is optimized for **Vbase editing experiments**.
 - Compatible with Python ≥ 3.10
 
 ---
+
+## Inputs
+--batch-file: .csv/.tsv batch file containing the following variales 
+    required: amplicon, input_seq
+    optional: window (e.g. "2-10", "2:10", "2..10", "2,10") OR window_start + window_end, RC (truthy/falsey values)
+--base-crispresso-dir: directory containing CRISPResso_batch_on_<amplicon> folders
 
 ## Requirements
 
